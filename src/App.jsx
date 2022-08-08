@@ -1,14 +1,10 @@
 import React from "react";
-import Content from "components";
+import { Home } from "pages";
 import "./App.css";
 
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<Content />
-			</header>
-		</div>
+		<Home />
 	);
 }
 
