@@ -14,5 +14,6 @@ module.exports = {
 	plugins: ["react"],
 	rules: {
 		"object-curly-spacing": ["error", "always", { "objectsInObjects": false }],
+		"linebreak-style": ["error", "unix"],
 	},
 };
