@@ -1,24 +1,13 @@
 import React from "react";
-import logo from "logo.svg";
+import Header from "./Header";
+import SideBar from "./SideBar";
+import Footer from "./Footer";
 
 const Content = () => (
 	<>
-		<img src={logo} className="App-logo" alt="logo" />
-		<p>
-          Edit
-			{" "}
-			<code>src/App.js</code>
-			{" "}
-          and save to reload.
-		</p>
-		<a
-			className="App-link"
-			href="https://reactjs.org"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-          Learn React
-		</a>
+		<Header />
+		<SideBar />
+		<Footer />
 	</>
 );
 
