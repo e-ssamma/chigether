@@ -1,17 +1,18 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./style.css";
 
 function Header() {
   return (
-    <div>
-      <a href="/">
-        <img className="logoImage" src="img/logo.png" />
-      </a>
+    <header>
+	  <Link to="/">
+	    <img className="logo-image" src="img/logo.png" />
+	  </Link>
       <input type="text" name="search" />
       <button type="submit" id="search_button">
-				search
+		search
       </button>
-    </div>
+    </header>
   );
 }
 
