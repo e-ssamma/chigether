@@ -6,8 +6,6 @@ import BestPage from "pages/BestPage";
 import TopChicken from "pages/TopChicken";
 import "./App.css";
 
-
-
 function App() {
   return (
     <Router>
