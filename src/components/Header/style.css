@@ -2,3 +2,16 @@
   height: 50px;
   width: 139px;
 }
+
+.input-search {
+  position: relative;
+  border: 3px solid #6441a5;
+  background: #fff;
+  font-size: 1.1em;
+  padding: 0.3em 0.5em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}

@@ -4,14 +4,17 @@ import "./style.css";
 
 function Header() {
   return (
-    <header>
+    <header className="header">
 	  <Link to="/">
 	    <img className="logo-image" src="img/logo.png" />
 	  </Link>
-      <input type="text" name="search" />
-      <button type="submit" id="search_button">
-		search
-      </button>
+	  <div>
+        <input className="input-search" type="text" name="search" />
+        <button type="submit" id="search_button">
+			search
+        </button>
+	  </div>
+      
     </header>
   );
 }
