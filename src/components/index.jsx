@@ -4,11 +4,11 @@ import SideBar from "./SideBar";
 import Footer from "./Footer";
 
 const Content = () => (
-	<>
-		<Header />
-		<SideBar />
-		<Footer />
-	</>
+  <>
+    <Header />
+    <SideBar />
+    <Footer />
+  </>
 );
 
 export default Content;

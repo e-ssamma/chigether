@@ -1,5 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {purple} from "@mui/material/colors";
+import SearchIcon from "@mui/icons-material/Search";
 import "./style.css";
 
 function Header() {
@@ -10,8 +12,7 @@ function Header() {
 	  </Link>
 	  <div>
         <input className="search-input" type="text" name="search" />
-        <button className="search-button" type="submit" id="search_button">
-        </button>
+        <SearchIcon sx={{color: purple[900], fontSize: 40}} />
 	  </div>
       
     </header>

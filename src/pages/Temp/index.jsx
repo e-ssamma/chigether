@@ -1,9 +1,9 @@
 import React from "react";
 
 function Temp() {
-	return (
-		<></>
-	);
+  return (
+    <></>
+  );
 }
 
 export default Temp;
