@@ -9,9 +9,8 @@ function Header() {
 	    <img className="logo-image" src="img/logo.png" />
 	  </Link>
 	  <div>
-        <input className="input-search" type="text" name="search" />
-        <button type="submit" id="search_button">
-			search
+        <input className="search-input" type="text" name="search" />
+        <button className="search-button" type="submit" id="search_button">
         </button>
 	  </div>
       
