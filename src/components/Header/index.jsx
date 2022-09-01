@@ -10,7 +10,7 @@ function Header() {
 	  <Link to="/">
 	    <img className="logo-image" src="img/logo.png" />
 	  </Link>
-	  <div>
+	  <div className="search">
         <input className="search-input" type="text" name="search" />
         <SearchIcon sx={{color: purple[900], fontSize: 40}} />
 	  </div>
