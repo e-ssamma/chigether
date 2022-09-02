@@ -46,6 +46,8 @@ export default SideBar;
 
 const Sidebar = styled.nav`
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   button {
     height: 30px;
@@ -54,6 +56,6 @@ const Sidebar = styled.nav`
   }
 
   .btn-orange {
-    background-color: tomato;
+    background-color: orange;
   }
 `;
