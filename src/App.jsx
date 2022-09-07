@@ -14,10 +14,8 @@ function App() {
         <Route path="/AllPage" element={<AllPage />} />
         <Route path="/TopChicken" element={<TopChicken />} />
         <Route path="/BestPage" element={<BestPage />} />
-		
       </Routes>
     </Router>
-    
   );
 }
 
