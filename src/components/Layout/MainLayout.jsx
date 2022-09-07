@@ -4,12 +4,14 @@ import styled from "styled-components";
 
 import Header from "../Header";
 import Footer from "../Footer";
+import SideBar from "../SideBar";
 
 function MainLayout() {
   return (
     <Wrapper>
       <Header />
       <ContentWrapper>
+        <SideBar/>
         <Outlet />
       </ContentWrapper>
       <Footer />
