@@ -9,7 +9,9 @@ function MainLayout() {
   return (
     <Wrapper>
       <Header />
-      <Outlet />
+      <ContentWrapper>
+        <Outlet />
+      </ContentWrapper>
       <Footer />
     </Wrapper>
   );
@@ -23,4 +25,7 @@ const Wrapper = styled.div`
 		"   a    main   main "
 		"   .     .      .   "
 		"footer footer footer";
+`;
+
+const ContentWrapper = styled.div`
 `;

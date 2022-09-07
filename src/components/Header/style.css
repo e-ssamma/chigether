@@ -3,15 +3,6 @@
   width: 139px;
 }
 
-.header {
-  width: 98%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .search {
   position: relative;
   display: flex;

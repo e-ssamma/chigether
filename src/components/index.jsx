@@ -5,7 +5,7 @@ import Contents from "./Contents-MainPage";
 import "./style.css"
 
 const Content = () => (
-  <div className="contents">
+  <div className="container">
     <SideBar />
     <Contents />
   </div>
