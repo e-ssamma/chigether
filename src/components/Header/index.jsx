@@ -14,7 +14,6 @@ function Header() {
         <input className="search-input" type="text" name="search" />
         <SearchIcon sx={{color: purple[900], fontSize: 40}} />
 	  </div>
-      
     </header>
   );
 }

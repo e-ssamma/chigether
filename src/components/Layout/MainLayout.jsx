@@ -1,21 +1,26 @@
 import React from "react";
+import {Outlet} from "react-router-dom";
 import styled from "styled-components";
+
+import Header from "../Header";
+import Footer from "../Footer";
 
 function MainLayout() {
   return (
-    <Containter>
-      <main>
-      </main>
-    </Containter>
+    <Wrapper>
+      <Header />
+      <Outlet />
+      <Footer />
+    </Wrapper>
   );
 }
 
 export default MainLayout;
 
-const Containter = styled.div`
+const Wrapper = styled.div`
   grid-template-areas:
 		"header header header"
-		"   a    main    b   "
+		"   a    main   main "
 		"   .     .      .   "
 		"footer footer footer";
 `;
