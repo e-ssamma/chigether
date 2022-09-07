@@ -2,8 +2,8 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="container">
-      <table border={1} width="1000px" height="2000px">
+    <div>
+      <table border={1}>
 	    <tbody>
           <tr>
             <td width="500px" height="500px" align="center">

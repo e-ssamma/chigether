@@ -11,8 +11,10 @@ function MainLayout() {
     <Wrapper>
       <Header />
       <ContentWrapper>
-        <SideBar/>
-        <Outlet />
+        <div className="container">
+          <SideBar/>
+          <Outlet />
+        </div>
       </ContentWrapper>
       <Footer />
     </Wrapper>
@@ -30,4 +32,12 @@ const Wrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+  }
 `;
