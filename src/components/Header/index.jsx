@@ -14,7 +14,7 @@ function Header() {
         </Link>
         <div className="search">
           <input className="search-input" type="text" name="search" />
-          <SearchIcon sx={{color: purple[900], fontSize: 40}} />
+          <SearchIcon sx={{color: purple[900], fontSize: 28}} />
         </div>
       </Container>
     </Wrapper>
@@ -26,6 +26,7 @@ export default Header;
 const Wrapper = styled.header`
   display: flex;
   justify-content: center;
+  margin-bottom: 1em;
 `;
 
 const Container = styled.div`
@@ -39,17 +40,18 @@ const Container = styled.div`
   }
 
   .search {
-    position: relative;
+    height: 50px;
+    padding: 0.4em 0.5em;
     display: flex;
     flex-direction: row;
-    height: 50px;
-    padding: 0.3em 0.5em;
+    align-items: center;
+    gap: 0.5em;
   }
 
   .search-input {
+    width: 180px;
+    height: 28px;
     border: 3px solid #6441a5;
     background: #fff;
-    font-size: 1.1em;
-    padding: 0.3em 0.5em;
   }
 `
