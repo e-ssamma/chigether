@@ -16,6 +16,7 @@ function MainLayout() {
           <Outlet />
         </div>
       </ContentWrapper>
+      <EmptyWrapper />
       <Footer />
     </Wrapper>
   );
@@ -40,4 +41,8 @@ const ContentWrapper = styled.div`
     justify-content: space-between;
     gap: 1em;
   }
+`;
+
+const EmptyWrapper = styled.div`
+  height: 120px;
 `;
