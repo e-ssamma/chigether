@@ -30,6 +30,7 @@ const Wrapper = styled.header`
 `;
 
 const Container = styled.div`
+  padding: .4em 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,8 +41,6 @@ const Container = styled.div`
   }
 
   .search {
-    height: 50px;
-    padding: 0.4em 0.5em;
     display: flex;
     flex-direction: row;
     align-items: center;

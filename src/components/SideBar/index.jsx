@@ -9,38 +9,30 @@ function SideBar() {
       <div className="menu--description">
         치게더 전체 메뉴
       </div>
-      <Link to="/Allpage">
-	      <button className="btn-orange">전체글 보기</button>
-        <br />
-      </Link>
-	    <Link to="/TopChicken">
-	      <button className="btn-orange">TOP치킨</button>
-        <br />
-      </Link>
-      <Link to="/Bestpage">
-        <button className="btn-orange">인기게시판</button>
-        <br />
-      </Link>
-      <Link to="/Allpage">
-        <button className="btn-orange">인기글</button>
-        <br />
-      </Link>
-      <Link to="/Allpage">
-        <button className="btn-orange">치킨홍보</button>
-        <br />
-      </Link>
-	    <Link to="/Allpage">
-	      <button className="btn-orange">치킨Q&A</button>
-        <br />
-      </Link>
-	    <Link to="/Allpage">
-	      <button className="btn-orange">치킨TIP</button>
-        <br />
-      </Link>
-	    <Link to="/Allpage">
-	      <button className="btn-orange">치킨창업</button>
-        <br />
-      </Link>
+      <MenuLink to="/Allpage">
+	      전체글 보기
+      </MenuLink>
+	    <MenuLink to="/TopChicken">
+	      TOP치킨
+      </MenuLink>
+      <MenuLink to="/Bestpage">
+        인기게시판
+      </MenuLink>
+      <MenuLink to="/Allpage">
+        인기글
+      </MenuLink>
+      <MenuLink to="/Allpage">
+        치킨홍보
+      </MenuLink>
+	    <MenuLink to="/Allpage">
+	      치킨Q&A
+      </MenuLink>
+	    <MenuLink to="/Allpage">
+	      치킨TIP
+      </MenuLink>
+	    <MenuLink to="/Allpage">
+	      치킨창업
+      </MenuLink>
     </Sidebar>
   );
 }
@@ -55,17 +47,27 @@ const Sidebar = styled.nav`
   }
 
   .menu--description {
+    padding: 0 0 0 1em;
+    width: calc(160px - 1em);
     height: 30px;
-    width: 160px;
     background-color: orange;
+    font-weight: 600;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
+`;
 
-  .btn-orange {
-    background-color: #fff;
-    color: #000;
-  }
+const MenuLink = styled(Link)`
+  margin-bottom: -1px;
+  padding: .2em 1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  text-decoration: none;
+  color: #000;
 `;
