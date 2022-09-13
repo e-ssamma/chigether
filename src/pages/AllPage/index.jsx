@@ -1,6 +1,6 @@
 import React from "react";
 
-function AllPage() {
+function allpage() {
   return (
     <div className="container">
 	    <h1>안녕? 난 전체 페이지야</h1>
@@ -8,4 +8,4 @@ function AllPage() {
   );
 }
 
-export default AllPage;
+export default allpage;

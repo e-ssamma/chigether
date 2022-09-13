@@ -1,4 +1,4 @@
 export {default as Home} from "./Home";
-export {default as AllPage} from "./AllPage";
-export {default as BestPage} from "./BestPage";
-export {default as TopChicken} from "./TopChicken";
+export {default as allpage} from "./allpage";
+export {default as bestpage} from "./bestpage";
+export {default as topchicken} from "./topchicken";
