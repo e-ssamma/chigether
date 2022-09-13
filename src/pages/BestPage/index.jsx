@@ -1,11 +1,11 @@
 import React from "react";
 
-function BestPage() {
+function bestpage() {
   return (
-    <div className="App">
+    <div className="container">
 	    <h1>안녕? 난 인기게시판이야</h1>
     </div>
   );
 }
 
-export default BestPage;
+export default bestpage;
