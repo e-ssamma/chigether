@@ -4,9 +4,9 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import MainLayout from "./components/Layout/MainLayout";
 import {
   Home,
-  AllPage,
-  BestPage,
-  TopChicken
+  allpage,
+  bestpage,
+  topchicken
 } from "./pages";
 
 import "./App.css";
@@ -17,9 +17,9 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/AllPage" element={<AllPage />} />
-          <Route path="/TopChicken" element={<TopChicken />} />
-          <Route path="/BestPage" element={<BestPage />} />
+          <Route path="/allpage" element={<allpage />} />
+          <Route path="/topchicken" element={<topchicken />} />
+          <Route path="/bestpage" element={<bestpage />} />
         </Route>  
       </Routes>
     </Router>
