@@ -9,28 +9,28 @@ function SideBar() {
       <div className="menu--description">
         치게더 전체 메뉴
       </div>
-      <MenuLink to="/Allpage">
+      <MenuLink to="/allpage">
 	      전체글 보기
       </MenuLink>
-	    <MenuLink to="/TopChicken">
+	    <MenuLink to="/topchicken">
 	      TOP치킨
       </MenuLink>
-      <MenuLink to="/Bestpage">
+      <MenuLink to="/bestpage">
         인기게시판
       </MenuLink>
-      <MenuLink to="/Allpage">
+      <MenuLink to="/allpage">
         인기글
       </MenuLink>
-      <MenuLink to="/Allpage">
+      <MenuLink to="/allpage">
         치킨홍보
       </MenuLink>
-	    <MenuLink to="/Allpage">
+	    <MenuLink to="/allpage">
 	      치킨Q&A
       </MenuLink>
-	    <MenuLink to="/Allpage">
+	    <MenuLink to="/allpage">
 	      치킨TIP
       </MenuLink>
-	    <MenuLink to="/Allpage">
+	    <MenuLink to="/allpage">
 	      치킨창업
       </MenuLink>
     </Sidebar>
