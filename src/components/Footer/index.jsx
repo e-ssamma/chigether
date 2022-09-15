@@ -24,7 +24,7 @@ const FooterWrapper = styled.footer`
     height: 10%;
     text-align: center;
     position: absolute;
-    background-color: #6441a5;
+    background-color: orange;
     color: white;
   }
 

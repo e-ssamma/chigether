@@ -10,7 +10,7 @@ function SideBar() {
         치게더 전체 메뉴
       </div>
       <MenuLink to="/allpage">
-	      전체글 보기
+	      전체게시판
       </MenuLink>
 	    <MenuLink to="/topchicken">
 	      TOP치킨
@@ -18,19 +18,19 @@ function SideBar() {
       <MenuLink to="/bestpage">
         인기게시판
       </MenuLink>
-      <MenuLink to="/allpage">
+      <MenuLink to="/bestpost">
         인기글
       </MenuLink>
-      <MenuLink to="/allpage">
+      <MenuLink to="/ad">
         치킨홍보
       </MenuLink>
-	    <MenuLink to="/allpage">
+	    <MenuLink to="/qna">
 	      치킨Q&A
       </MenuLink>
-	    <MenuLink to="/allpage">
+	    <MenuLink to="/tip">
 	      치킨TIP
       </MenuLink>
-	    <MenuLink to="/allpage">
+	    <MenuLink to="/business">
 	      치킨창업
       </MenuLink>
     </Sidebar>

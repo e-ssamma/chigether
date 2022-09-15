@@ -1,4 +1,9 @@
 export {default as Home} from "./Home";
 export {default as Allpage} from "./allpage";
 export {default as Bestpage} from "./bestpage";
+export {default as Bestpost} from "./bestpost";
 export {default as Topchicken} from "./topchicken";
+export {default as AD} from "./ad";
+export {default as QNA} from "./qna";
+export {default as Tip} from "./tip";
+export {default as Business} from "./business";

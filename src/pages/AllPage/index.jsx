@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 function allpage() {
   return (
@@ -7,7 +8,11 @@ function allpage() {
       <div className="brand--box">		
         <h3 className="brand--title">교촌치킨</h3>
         <ul className="brand--menu">
-          <li>교촌 오리지날</li>
+          <li>
+            <PageLink to="/">
+	          교촌 오리지날
+            </PageLink>
+          </li>
           <li>교촌 허니콤보</li>
           <li>교촌 레드콤보</li>
           <li>교촌 블랙시크릿</li>
@@ -55,4 +60,9 @@ const Container = styled.div`
     flex: 1 1 30%;
     border: 1px solid #333;
   }
+`;
+
+const PageLink = styled(Link)`
+  display: flex;
+  justify-content: flex-start;
 `;
