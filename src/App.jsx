@@ -6,7 +6,12 @@ import {
   Home,
   Allpage,
   Bestpage,
-  Topchicken
+  Bestpost,
+  Topchicken,
+  AD,
+  Tip,
+  QNA,
+  Business
 } from "./pages";
 
 import "./App.css";
@@ -20,6 +25,11 @@ function App() {
           <Route path="/allpage" element={<Allpage />} />
           <Route path="/topchicken" element={<Topchicken />} />
           <Route path="/bestpage" element={<Bestpage />} />
+          <Route path="/bestpost" element={<Bestpost />} />
+          <Route path="/ad" element={<AD />} />
+          <Route path="/tip" element={<Tip />} />
+          <Route path="/qna" element={<QNA />} />
+          <Route path="/business" element={<Business />} />
         </Route>  
       </Routes>
     </Router>
