@@ -9,7 +9,7 @@ function allpage() {
         <h3 className="brand--title">교촌치킨</h3>
         <ul className="brand--menu">
           <li>
-            <PageLink to="/">
+            <PageLink to="/gesipan">
 	          교촌 오리지날
             </PageLink>
           </li>
