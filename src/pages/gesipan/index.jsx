@@ -2,24 +2,53 @@ import React, {useState} from "react";
 import styled from "styled-components";
 
 function gesipan() {
-  const [contents, useContents] = useState({
+  const [contents, setContents] = useState({
     title: " ",
     content: " "
   })
+
+  const [viewContents, setViewContents] = useState([]);
+
+  const onChange = (event) => {
+    const {title, content} = event.target;
+
+    setContents({
+      ...contents,
+      [title]: content
+    });
+
+    console.log(contents);
+  }
+
+  const onClick = (event) => {
+    event.preventDefault();
+    if ( contents === null ) {
+      return;
+    }    
+    setViewContents(currentArray => [...currentArray, contents]);
+    setContents(null);
+  }
+
   return (
     <Container className="container">
-      <h1>게시판</h1>
+      <h1>치킨 게시판</h1>
       <Contents>
-        <h2>제목</h2>
-        <div>
-          내용
-        </div>
+        {viewContents.map((element) =>
+          <div key={element.toString()}>
+            <h2>{element.title}</h2>
+            <div>
+              {element.content}
+            </div>
+          </div>    
+        )}
+        
       </Contents>
       <InputContent>
-        <InputTitle type='text' placeholder='제목' />
-        <InputText placeholder='내용'></InputText>
+        <h3>글쓰기</h3>
+        <InputTitle type='text' placeholder='제목' onChange={onChange} name="title" />
+        <InputText placeholder='내용' onChange={onChange}></InputText>
       </InputContent>
-      <ButtonSubmit>입력</ButtonSubmit>
+      <ButtonSubmit onClick={onClick}>입력</ButtonSubmit>
     </Container>
   );
 }
@@ -28,7 +57,7 @@ export default gesipan;
 
 const Container = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
   }
 `;
@@ -39,18 +68,18 @@ const Contents = styled.div`
   border: 1px solid #333;
   padding: 10px 0 30px 0;
   border-radius: 5px;
-  margin-bottom : 50px;
   }
 `;
 
 const InputContent = styled.div`
   width: 80%;
   margin: 0 auto;
+  border: 1px solid #333;
   }
 `;
   
 const InputTitle = styled.input`
-  width: 500px;
+  width: 80%;
   height: 40px;
   margin: 10px;
   }
@@ -66,9 +95,8 @@ const ButtonSubmit = styled.button`
   width: 200px;
   height: 50px;
   font-size: 20px;
-  padding: 20px;
   border: none;
-  background: indianred;
-  border-radius: 5px;
+  background: orange;
+  border-radius: 10px;
   }
 `;
