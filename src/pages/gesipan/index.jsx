@@ -10,15 +10,22 @@ function gesipan() {
   const [viewContents, setViewContents] = useState([]);
 
   const onChange = (event) => {
-    const {title, content} = event.target;
+    const {name, value} = event.target;
 
     setContents({
       ...contents,
-      [title]: content
+      [name]: value
     });
 
     console.log(contents);
   }
+
+  const onReset = () => {
+    setContents({
+      title: "",
+      content: ""
+    });
+  };
 
   const onClick = (event) => {
     event.preventDefault();
@@ -26,7 +33,8 @@ function gesipan() {
       return;
     }    
     setViewContents(currentArray => [...currentArray, contents]);
-    setContents(null);
+    // setContents(null);
+    onReset();
   }
 
   return (
@@ -39,14 +47,14 @@ function gesipan() {
             <div>
               {element.content}
             </div>
-          </div>    
+          </div>
         )}
         
       </Contents>
       <InputContent>
         <h3>글쓰기</h3>
         <InputTitle type='text' placeholder='제목' onChange={onChange} name="title" />
-        <InputText placeholder='내용' onChange={onChange}></InputText>
+        <InputText type='text' placeholder='내용' onChange={onChange} name="content"></InputText>
       </InputContent>
       <ButtonSubmit onClick={onClick}>입력</ButtonSubmit>
     </Container>
