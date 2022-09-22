@@ -11,7 +11,8 @@ import {
   AD,
   Tip,
   QNA,
-  Business
+  Business,
+  Gesipan
 } from "./pages";
 
 import "./App.css";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/tip" element={<Tip />} />
           <Route path="/qna" element={<QNA />} />
           <Route path="/business" element={<Business />} />
+          <Route path="/gesipan" element={<Gesipan />} />
         </Route>  
       </Routes>
     </Router>
@@ -37,3 +39,4 @@ function App() {
 }
 
 export default App;
+

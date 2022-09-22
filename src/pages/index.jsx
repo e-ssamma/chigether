@@ -7,3 +7,4 @@ export {default as AD} from "./ad";
 export {default as QNA} from "./qna";
 export {default as Tip} from "./tip";
 export {default as Business} from "./business";
+export {default as Gesipan} from "./gesipan";
