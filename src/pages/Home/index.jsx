@@ -9,7 +9,7 @@ function Home() {
           이 달의 치킨
         </h3>
         <div className="content--body">
-          <img  src="img/kyochon-honey.png" />
+          <img src="img/kyochon-honey.png" />
 			  <h3>교촌 허니콤보</h3>
         </div>
       </div>
