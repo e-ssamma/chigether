@@ -21,6 +21,12 @@ function SideBar() {
       <MenuLink to="/bestpost">
         인기글
       </MenuLink>
+      <MenuLink to="/worldcup">
+        치킨월드컵
+      </MenuLink>
+      <MenuLink to="/whateat">
+        오늘뭐먹지
+      </MenuLink>
       <MenuLink to="/ad">
         치킨홍보
       </MenuLink>

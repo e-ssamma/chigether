@@ -8,6 +8,8 @@ import {
   Bestpage,
   Bestpost,
   Topchicken,
+  Worldcup,
+  Whateat,
   AD,
   Tip,
   QNA,
@@ -27,6 +29,8 @@ function App() {
           <Route path="/topchicken" element={<Topchicken />} />
           <Route path="/bestpage" element={<Bestpage />} />
           <Route path="/bestpost" element={<Bestpost />} />
+          <Route path="/worldcup" element={<Worldcup />} />
+          <Route path="/whateat" element={<Whateat />} />
           <Route path="/ad" element={<AD />} />
           <Route path="/tip" element={<Tip />} />
           <Route path="/qna" element={<QNA />} />
