@@ -1,6 +1,6 @@
 import React from "react";
 
-function topchicken() {
+function TopChicken() {
   return (
     <div className="container">
 	    <h1>안녕? 난 TOP치킨이야</h1>
@@ -8,4 +8,4 @@ function topchicken() {
   );
 }
 
-export default topchicken;
+export default TopChicken;

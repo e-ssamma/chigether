@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 
-function allpage() {
+function AllPage() {
   return (
     <Container className="container">
       <div className="brand--box">		
@@ -20,10 +20,10 @@ function allpage() {
           <li>교촌 치즈트러플</li>
         </ul>
       </div>
-	  <div className="brand--box">		
+	    <div className="brand--box">		
         <h3 className="brand--title">굽네치킨</h3>
       </div>
-	  <div className="brand--box">		
+	    <div className="brand--box">		
         <h3 className="brand--title">BBQ치킨</h3>
       </div>
       <div className="brand--box">		
@@ -49,7 +49,7 @@ function allpage() {
   );
 }
 
-export default allpage;
+export default AllPage;
 
 const Container = styled.div`
   display: flex;

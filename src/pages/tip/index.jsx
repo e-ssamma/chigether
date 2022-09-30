@@ -1,6 +1,6 @@
 import React from "react";
 
-function tip() {
+function Tip() {
   return (
     <div className="container">
 	    <h1>안녕? 난 TIP이야</h1>
@@ -8,4 +8,4 @@ function tip() {
   );
 }
 
-export default tip;
+export default Tip;

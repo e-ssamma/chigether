@@ -1,6 +1,6 @@
 import React from "react";
 
-function bestpage() {
+function BestPage() {
   return (
     <div className="container">
 	    <h1>안녕? 난 인기게시판이야</h1>
@@ -8,4 +8,4 @@ function bestpage() {
   );
 }
 
-export default bestpage;
+export default BestPage;

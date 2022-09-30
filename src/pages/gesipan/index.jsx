@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styled from "styled-components";
 
-function gesipan() {
+function Gesipan() {
   const [contents, setContents] = useState({
     title: " ",
     content: " "
@@ -29,7 +29,7 @@ function gesipan() {
 
   const onClick = (event) => {
     event.preventDefault();
-    if ( contents === null ) {
+    if (contents === null) {
       return;
     }    
     setViewContents(currentArray => [...currentArray, contents]);
@@ -61,13 +61,12 @@ function gesipan() {
   );
 }
 
-export default gesipan;
+export default Gesipan;
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  }
 `;
 
 const Contents = styled.div`
@@ -76,27 +75,23 @@ const Contents = styled.div`
   border: 1px solid #333;
   padding: 10px 0 30px 0;
   border-radius: 5px;
-  }
 `;
 
 const InputContent = styled.div`
   width: 80%;
   margin: 0 auto;
   border: 1px solid #333;
-  }
 `;
   
 const InputTitle = styled.input`
   width: 80%;
   height: 40px;
   margin: 10px;
-  }
 `;
 
 const InputText = styled.textarea`
   width: 80%;
   min-height: 500px;
-  }
 `;
 
 const ButtonSubmit = styled.button`
@@ -106,5 +101,4 @@ const ButtonSubmit = styled.button`
   border: none;
   background: orange;
   border-radius: 10px;
-  }
 `;

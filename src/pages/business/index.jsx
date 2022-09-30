@@ -1,6 +1,6 @@
 import React from "react";
 
-function business() {
+function Business() {
   return (
     <div className="container">
 	    <h1>안녕? 난 창업게시판이야</h1>
@@ -8,4 +8,4 @@ function business() {
   );
 }
 
-export default business;
+export default Business;

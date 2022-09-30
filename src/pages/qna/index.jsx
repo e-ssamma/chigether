@@ -1,6 +1,6 @@
 import React from "react";
 
-function qna() {
+function Qna() {
   return (
     <div className="container">
 	    <h1>안녕? 난 qna야</h1>
@@ -8,4 +8,4 @@ function qna() {
   );
 }
 
-export default qna;
+export default Qna;

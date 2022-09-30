@@ -1,6 +1,6 @@
 import React from "react";
 
-function ad() {
+function Ad() {
   return (
     <div className="container">
 	    <h1>안녕? 난 ad이야</h1>
@@ -8,4 +8,4 @@ function ad() {
   );
 }
 
-export default ad;
+export default Ad;

@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["eslint:recommended", "plugin:react/recommended", "naver", "prettier"],
+  extends: ["plugin:react/recommended", "naver", "prettier"],
   parserOptions: {
     ecmaFeatures: {
       js: true,
@@ -100,6 +100,9 @@ module.exports = {
     "array-bracket-newline": ["error", {"multiline": true}],
     // 줄의 끝에서 중괄호 시작
     "brace-style": "error",
+    "no-multi-spaces": "error",
+    "no-whitespace-before-property": "error",
+    "func-call-spacing": "error",
     // 콤마(,)은 뒤에 공백을 삽입한다.
     "comma-spacing": ["error", {before: false, after: true}],
     "consistent-this": ["error", "self"],
@@ -185,5 +188,12 @@ module.exports = {
         "nonwords": false
       }
     ],
+
+    // 파일의 마지막 줄 개행.
+    "eol-last": ["error", "always"],
+    "space-in-parens": ["error", "never"],
+    "block-spacing": "error",
+    "arrow-spacing": ["error", {before: true, after: true}],
+    "react/prop-types": "off",
   },
 };
