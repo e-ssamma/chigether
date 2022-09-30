@@ -1,12 +1,29 @@
-export {default as Home} from "./Home";
-export {default as Allpage} from "./AllPage";
-export {default as Bestpage} from "./BestPage";
-export {default as Bestpost} from "./BestPost";
-export {default as Topchicken} from "./TopChicken";
-export {default as Worldcup} from "./WorldCup";
-export {default as Whateat} from "./WhatEat";
-export {default as AD} from "./Ad";
-export {default as QNA} from "./Qna";
-export {default as Tip} from "./Tip";
-export {default as Business} from "./Business";
-export {default as Gesipan} from "./Gesipan";
+import Home from "./Home";
+import AllPage from "./AllPage";
+import BestPage from "./BestPage";
+import BestPost from "./BestPost";
+import TopChicken from "./TopChicken";
+import WorldCup from "./WorldCup";
+import WhatEat from "./WhatEat";
+import Ad from "./Ad";
+import Qna from "./Qna";
+import Tip from "./Tip";
+import Business from "./Business";
+import Gesipan from "./Gesipan";
+
+const Pages = {
+  Home,
+  AllPage,
+  BestPage,
+  BestPost,
+  TopChicken,
+  WorldCup,
+  WhatEat,
+  Ad,
+  Qna,
+  Tip,
+  Business,
+  Gesipan,
+};
+
+export default Pages;
