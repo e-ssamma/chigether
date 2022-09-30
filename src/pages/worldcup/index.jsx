@@ -1,6 +1,6 @@
 import React from "react";
 
-function worldcup() {
+function WorldCup() {
   return (
     <div className="container">
 	    <h1>안녕? 난 치킨월드컵이야</h1>
@@ -8,4 +8,4 @@ function worldcup() {
   );
 }
 
-export default worldcup;
+export default WorldCup;

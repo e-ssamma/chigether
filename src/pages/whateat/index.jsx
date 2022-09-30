@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function whateat() {
+function WhatEat() {
   /*
   const qnaList = [
     {
@@ -173,7 +173,7 @@ function whateat() {
   );  
 }
 
-export default whateat;
+export default WhatEat;
 
 const Container = styled.div`
   display: flex;
